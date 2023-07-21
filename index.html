@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/bookmark.png" />
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+
+    <div class="home min-vh-100 ">
+        <div class="container  d-flex flex-column  align-items-center justify-content-center ">
+            <h1 class=" title-1 position-relative py-4">Bookmarker</h1>
+            <div
+                class="bookmark-content  d-flex flex-column justify-content-center align-items-center w-100 py-4 gap-4 ">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site justify-content-center  align-items-center flex-column w-100">
+                    <label for="bookmarkName"> <i class="fa-solid fa-book-bookmark me-2 py-3"></i> Site Name</label>
+
+                    <input type="text" id="bName" placeholder="Bookmark Name" onkeyup="bNameValidation()" class="form-control mb-3 border" />
+
+
+                    <label for="bookmarkName"><i class="fa-solid fa-link me-2 py-3"></i>Site URL</label>
+
+                    <input type="text" id="bURL" placeholder="Website URL" class="form-control mb-3 border" />
+                </div>
+                <button class="btn btn-danger btn-submit px-5" onclick="createBookmark()">Submit</button>
+            </div>
+
+            <div class="w-100 m-auto my-5 text-center">
+                <table class="table">
+                    <thead>
+
+                        <th>index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="bookmarkBody">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+   
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

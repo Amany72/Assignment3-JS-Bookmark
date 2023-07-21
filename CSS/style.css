@@ -1,0 +1,73 @@
+.home {
+    background-color: #F7ECDE;
+}
+.container .title-1{
+font-family: 'Pacifico', cursive;
+Color:#352e28;
+font-weight: 700px;
+line-height:80px ;
+Size:90px ;
+isolation: isolate;
+}
+.container .title-1::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    bottom: 40px;
+    background-color: #fec260;
+    transition:0.5s all;
+    z-index: -1;
+}
+.container .title-1:hover::before{
+    height: 32px;
+}
+
+/* .bookmark-content{
+    border-style: dotted;
+    color:#352e28;
+    border-width: 2px 0px;
+} */
+.bookmark-content{
+    border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+.bookmark-content h2{
+    font-family: 'Righteous', cursive;
+    font-size: 27px;
+    line-height: 60px;
+    background: linear-gradient(to right, #3ca55c , #b5ac49);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.site .form-control:focus{
+color: #212529;
+box-shadow: 0 0 0 4px #e8b56355;
+border-color: #ea9307 ;
+
+
+}
+.site label{
+    /* font-family: 'PT Sans Caption', sans-serif; */
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.site {
+font-family: 'PT Sans Caption', sans-serif ;
+}
+
+.btn-visit{
+    background-color: #9eb23b;
+    color: #ffff;
+transition: 0.5s all;
+}
+
+.btn-visit:hover{
+  background-color: #8A9E23;
+  color: #ffff;
+
+}
